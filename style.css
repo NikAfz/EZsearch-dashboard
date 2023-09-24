@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+body{
+  /* background-color: rgba(175, 138, 255, 0.450); */
+  background-image:
+    linear-gradient(rgba(175, 138, 255, 0.450),rgba(175, 138, 255, 0.450)),
+    url(./img/flower.png);
+  /* background-repeat:space; */
+  background-size: 1800px;
+}
+.time--container{
+  /* background-color: lightblue; */
+  position: fixed;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time{
+  color: lightslategray;
+}
+.time--date{
+  color: lightslategray;
+  font-weight: 400;
+}
+
+.g--apps-container{
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 100vh;
+  padding: 0px 20px;
+  width: 50px;
+}
+.app{
+  margin: 15px 0px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9b47e6;
+  border-radius: 10px;
+}
+.app:hover{
+  background-color: #d7b3f3;
+  transition: all 150ms;
+}
+.app-img{
+  width: 30px;
+}
+
+
+main{
+  display: flex;
+  align-items: center;
+}
+.input-container{
+  /* background-color: lightblue; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  box-shadow: 5px 5px 15px lightslategray;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+.input{
+
+  background-color:white ;
+  height: 60px;
+  width: 33vw;
+  border: 1.4px solid #5427b4;
+  border-radius: 30px 0px 0px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 20px;
+  outline: none;
+}
+.submit{
+  background-color:white;
+  
+  padding:10px 5px 10px 0px;
+  width: 60px;
+  border: 1.4px solid #5427b4;
+  border-radius: 0px 30px 30px 0px;
+  outline: none;
+  cursor: pointer;
+  margin-left: -5px;
+}
+.submit:active{
+  border-width: 2px;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.most--used-container{
+  background-color: #dbcaff7a;
+  backdrop-filter:blur(3px);
+  border:3px solid #5427b4 ;
+  border-radius: 20px;
+  width: 400px;
+  margin-top: 40px;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items:start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.most--used-app{
+  background-color: #bc9efc9c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height:80px;
+  width: 80px;
+  margin: 5px;
+  border: 2px solid #9b47e6;
+  border-radius: 35px;
+}
+.most--used-img{
+  width: 50px;
+}

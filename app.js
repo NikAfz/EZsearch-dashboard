@@ -6,13 +6,16 @@ document.addEventListener("DOMContentLoaded", setInterval(() =>{
   ];
 
   let subtract = 0;
+  let added0 = '' ;
 
   if (now.getHours() > 12){
     subtract = 12
   };
-  
+  if (now.getMinutes() < 10 ){
+    added0 = '0'
+  }
 
-  const hours = now.getHours() - subtract + ":" + now.getMinutes();
+  const hours = now.getHours() - subtract + ":" + added0 + now.getMinutes();
   const day = now.toLocaleDateString('en-EN', { weekday: 'long' });
   const month = monthNames[now.getMonth()];
   const fullYear = now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear();
